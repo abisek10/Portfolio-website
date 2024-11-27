@@ -1,0 +1,134 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    font-weight: 600;
+}
+
+.header_link{
+    font-size: var(--size-xs);
+    color: var(--clr-slate600);
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header_link:hover {
+    color: var(--clr-rose);
+}
+
+.header_line {
+    background-color: var(--clr-slate800);
+    width: 2px;
+    padding-top: 1.5em;
+}
+
+.header_sun {
+    display: block;
+    color: var(--clr-slate600);
+    width: var(--size-base);
+    height: var(--size-base);
+    cursor: pointer;
+}
+
+.header_resume {
+    color: #f1f5f9;;
+    text-decoration: none;
+    font-size: var(--size-xs);
+}
+
+.header_bar {
+    display: block;
+    color: var(--clr-slate400);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+
+/* 0px */
+@media (min-width: 0px) {
+    .header_resume {
+        display: none;
+    }
+
+    .header_link{
+        display: none;
+    }
+
+    .header_line {
+        display: none;
+    }
+    
+    .header_sun {
+        display: none;
+    }
+} 
+
+
+ /* xs */
+ /* @media (min-width: 475px) {
+}  */
+
+/* sm */
+/* @media (min-width: 640px) {
+} */
+
+/* md */
+ @media (min-width: 768px) {
+    .header_resume {
+        display: block;
+    }
+
+    .header_bar {
+        display: none;
+    }
+
+    .header_link{
+        display: block;
+    }
+
+    .header_line {
+        display: block;
+    }
+    
+    .header_sun {
+        display: block;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .header_link{
+        font-size: var(--size-sm);
+    }
+    
+    .header_sun {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+    
+    .header_resume {
+        text-decoration: none;
+        font-size: var(--size-sm);
+    }
+}
+
+ /* xl */
+/* @media (min-width: 1280px) {
+} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+} */

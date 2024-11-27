@@ -1,0 +1,234 @@
+.featured_div1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured_h3-indigo {
+    font-size: var(--size-sm);
+    font-weight: 400;
+    color: var(--clr-indigo);
+    text-transform: capitalize;
+}
+
+.featured_NewsApp {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.featured_h1 {
+    font-size: var(--size-2xl);
+    text-transform: uppercase;
+}
+
+.featured_link {
+    width: var(--size-2xl);
+    color: var(--clr-rose);
+}
+
+.featured_description {
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+    margin: 1rem 0;
+    max-width: 60ch;
+}
+
+.featured_div2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured_div2 div {
+    min-width: 250px;
+    flex: 1;
+}
+
+.featured_h3 {
+    font-size: var(--size-base);
+    margin-bottom: 0.25em;
+}
+
+.featured_techStack {
+    padding: 0;
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+    list-style: none;
+}
+
+.featured_p {
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+}
+
+.featured_image-container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+.image_wrapper::after {
+    content: '.';
+    background-color: rgba(79, 70, 229, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.3s ease 0s;
+}
+
+.image_wrapper:hover::after {
+    background-color: rgba(79, 70, 229, 0.1);
+}
+
+.image_wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.featured_image {
+    width: 100%;
+    height: 229.391px;
+    object-fit: cover;
+}
+
+ /* xs */
+ @media (min-width: 475px) {
+    .featured_h3-indigo {
+        font-size: var(--size-base);
+        font-weight: 400;
+    }
+    
+    .featured_h1 {
+        font-size: var(--size-3xl);
+    }
+    
+    .featured_link {
+        width: var(--size-3xl);
+    }
+    
+    .featured_description {
+        font-size: var(--size-base);
+        margin: 1rem 0;
+    }
+    
+    .featured_h3 {
+        font-size: var(--size-lg);
+    }
+    
+    .featured_techStack {
+        font-size: var(--size-base);
+    }
+    
+    .featured_p {
+        font-size: var(--size-base);
+    }
+
+    .featured_image-container {
+        margin-top: 1.5rem;
+        grid-gap: 1.5rem;
+    }
+
+    .featured_image {
+        height: 231.406px;
+    }
+} 
+
+/* sm */
+@media (min-width: 640px) {
+    .featured_image-container {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+    .featured_image {
+        height: 314.594px;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .featured_image {
+        height: 379.125px;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .featured_h3-indigo {
+        font-size: var(--size-lg);
+        font-weight: 400;
+    }
+    
+    .featured_h1 {
+        font-size: var(--size-4xl);
+    }
+    
+    .featured_link {
+        width: var(--size-4xl);
+    }
+    
+    .featured_description {
+        font-size: var(--size-lg);
+        margin: 1.5rem 0;
+    }
+    
+    .featured_h3 {
+        font-size: var(--size-xl);
+    }
+    
+    .featured_techStack {
+        font-size: var(--size-lg);
+    }
+    
+    .featured_p {
+        font-size: var(--size-lg);
+    }   
+
+    .featured_image {
+        height: 508.188px;
+    }
+}
+
+ /* xl */
+@media (min-width: 1280px) {
+    .featured_h3-indigo {
+        font-size: var(--size-xl);
+        font-weight: 400;
+    }
+    
+    .featured_h1 {
+        font-size: var(--size-5xl);
+    }
+    
+    .featured_link {
+        width: var(--size-5xl);
+    }
+    
+    .featured_description {
+        font-size: var(--size-xl);
+        margin: 2rem 0;
+    }
+    
+    .featured_h3 {
+        font-size: var(--size-2xl);
+    }
+    
+    .featured_techStack {
+        font-size: var(--size-xl);
+    }
+    
+    .featured_p {
+        font-size: var(--size-xl);
+    }
+
+    .featured_image-container {
+        margin-top: 2rem;
+        grid-gap: 2rem;
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+} */
